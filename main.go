@@ -10,6 +10,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("error getting issue data %v", err)
 	}
-	convertedBytes := string(issues)
-	fmt.Println(convertedBytes)
+	// Converts a slice of bytes into a string
+	convertBytes := string(issues)
+	fmt.Println(convertBytes)
 }
