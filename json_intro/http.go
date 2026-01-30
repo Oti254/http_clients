@@ -17,7 +17,7 @@ func getIssues(url string) ([]Issue, error){
 
 	// Decoding the json into a slice of structs
 	decoder := json.NewDecoder(res.Body)
-	err := decoder.Decode(&issues)
+	err = decoder.Decode(&issues)
 	if err != nil {
 		return nil, err
 	}
